@@ -1,0 +1,53 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: 22pt/1.44 -system-font, San Fransisco, Helvetica Neue, Arial, sans-serif;
+	height: 100vh;
+}
+
+body {
+	display: grid;
+	grid-gap: .5em;
+	background: linear-gradient(180deg, #fff 0%, #eee 100%);
+	background-size: cover;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+time {
+	font-size: 1.3em;
+}
+
+.time {
+	grid-column-end: span 2;
+	font-size: 1.3em;
+}
+
+.time, .really, .refocus {
+	padding: .5em;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.time, .really, .refocus {
+		grid-column: 1 / span 2;
+	}
+}
+
+footer {
+	grid-column: 1 / span 2;
+	padding: 1em 0 0 1em;
+	font-size: .5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h1 {
+	grid-column: 1 / span 2;
+	padding: .5em;
+	text-align: center;
+}
+
+em {
+	font-size: 1.3em;
+}
